@@ -103,10 +103,10 @@ ivn@ivn-u22:~/Projects/HW1/cursor$ head -7 hw.txt
 5
 6
 7
-ivn@ivn-u22:~/Projects/HW1/cursor$ echo Hello > test.sh
+ivn@ivn-u22:~/Projects/HW1/cursor$ echo "echo 'Hello'" > test.sh
 ivn@ivn-u22:~/Projects/HW1/cursor$ chmod 764 test.sh
 ivn@ivn-u22:~/Projects/HW1/cursor$ ./test.sh
-./test.sh: line 1: Hello: command not found
+Hello
 ivn@ivn-u22:~/Projects/HW1/cursor$ find *.sh
 hw1.sh
 hw2.sh
