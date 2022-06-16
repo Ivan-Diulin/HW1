@@ -1,2 +1,114 @@
 2022.06.16 start of commands
 ============================
+ivn@ivn-u22:~$ cd Projects
+ivn@ivn-u22:~/Projects$ cd HW1
+ivn@ivn-u22:~/Projects/HW1$ mkdir cursor
+ivn@ivn-u22:~/Projects/HW1$ touch test.txt
+ivn@ivn-u22:~/Projects/HW1$ cp test.txt cursor/
+ivn@ivn-u22:~/Projects/HW1$ ls -l
+total 16
+drwxrwxr-x 2 ivn ivn 4096 чер 16 05:06 cursor
+-rw-rw-r-- 1 ivn ivn 2343 чер 16 04:21 HT1.txt
+-rw-rw-r-- 1 ivn ivn   58 чер 16 01:42 HW1_execution_log.txt
+-rw-rw-r-- 1 ivn ivn   74 чер 16 05:01 README.md
+-rw-rw-r-- 1 ivn ivn    0 чер 16 05:06 test.txt
+ivn@ivn-u22:~/Projects/HW1$ ls ~ -r -la
+total 136
+drwxrwxr-x  3 ivn  ivn  4096 чер 15 18:58 .vscode
+-rw-------  1 ivn  ivn  1362 чер 16 04:35 .viminfo
+drwxr-xr-x  2 ivn  ivn  4096 чер 13 18:25 Videos
+-rw-r-----  1 ivn  ivn     5 чер 14 20:55 .vboxclient-seamless.pid
+-rw-r-----  1 ivn  ivn     5 чер 14 20:55 .vboxclient-draganddrop.pid
+-rw-r-----  1 ivn  ivn     5 чер 14 20:55 .vboxclient-display-svga-x11.pid
+-rw-r-----  1 ivn  ivn     5 чер 14 20:55 .vboxclient-clipboard.pid
+drwx------  6 ivn  ivn  4096 чер 16 01:07 .thunderbird
+drwxr-xr-x  2 ivn  ivn  4096 чер 13 18:25 Templates
+-rw-r--r--  1 ivn  ivn     0 чер 13 20:09 .sudo_as_admin_successful
+drwx------  2 ivn  ivn  4096 чер 13 20:12 .ssh
+drwx------  8 ivn  ivn  4096 чер 15 18:58 snap
+drwxr-xr-x  2 ivn  ivn  4096 чер 13 18:25 Public
+drwxrwxr-x  4 ivn  ivn  4096 чер 16 01:38 Projects
+-rw-r--r--  1 ivn  ivn   807 чер 13 18:20 .profile
+drwx------  3 ivn  ivn  4096 чер 15 18:58 .pki
+drwxr-xr-x  3 ivn  ivn  4096 чер 13 23:52 Pictures
+drwxr-xr-x  2 ivn  ivn  4096 чер 13 18:25 Music
+drwx------  3 ivn  ivn  4096 чер 16 01:07 .mozilla
+drwx------  3 ivn  ivn  4096 чер 13 18:25 .local
+-rw-------  1 ivn  ivn    20 чер 16 00:53 .lesshst
+drwxrwxr-x  4 ivn  ivn  4096 чер 13 23:48 .java
+drwx------  2 ivn  ivn  4096 чер 15 02:13 .gnupg
+-rw-rw-r--  1 ivn  ivn   171 чер 15 20:50 .gitconfig
+drwxr-xr-x  2 ivn  ivn  4096 чер 13 20:35 Downloads
+drwxr-xr-x  2 ivn  ivn  4096 чер 15 02:45 Documents
+drwxr-xr-x  2 ivn  ivn  4096 чер 16 05:07 Desktop
+drwx------ 17 ivn  ivn  4096 чер 15 19:07 .config
+drwx------ 16 ivn  ivn  4096 чер 16 01:07 .cache
+-rw-r--r--  1 ivn  ivn  3771 чер 13 18:20 .bashrc
+-rw-r--r--  1 ivn  ivn   220 чер 13 18:20 .bash_logout
+-rw-------  1 ivn  ivn  6775 чер 16 05:04 .bash_history
+drwxr-xr-x  3 root root 4096 чер 13 18:20 ..
+drwxr-x--- 22 ivn  ivn  4096 чер 16 04:35 .
+ivn@ivn-u22:~/Projects/HW1$ mv test.txt new_test.txt
+ivn@ivn-u22:~/Projects/HW1$ touch empty_file.txt
+ivn@ivn-u22:~/Projects/HW1$ rm empty_file.txt new_test.txt
+ivn@ivn-u22:~/Projects/HW1$ touch cursor/hw.txt
+ivn@ivn-u22:~/Projects/HW1$ touch -t 2001010415.00 cursor/hw.txt
+ivn@ivn-u22:~/Projects/HW1$ cd cursor
+ivn@ivn-u22:~/Projects/HW1/cursor$ touch hw.sh hw1.sh hw2.sh hw1.txt
+ivn@ivn-u22:~/Projects/HW1/cursor$ ls -a | grep .sh
+hw1.sh
+hw2.sh
+hw.sh
+ivn@ivn-u22:~/Projects/HW1/cursor$ mkdir text_files
+ivn@ivn-u22:~/Projects/HW1/cursor$ cp *.txt text_files/
+ivn@ivn-u22:~/Projects/HW1/cursor$ echo cursor > hw.txt
+ivn@ivn-u22:~/Projects/HW1/cursor$ cat hw.txt
+cursor
+ivn@ivn-u22:~/Projects/HW1/cursor$ chmod 064 hw.txt
+ivn@ivn-u22:~/Projects/HW1/cursor$ cat hw.txt
+cat: hw.txt: Permission denied
+ivn@ivn-u22:~/Projects/HW1/cursor$ chmod 700 hw.txt
+ivn@ivn-u22:~/Projects/HW1/cursor$ cat hw.txt
+cursor
+ivn@ivn-u22:~/Projects/HW1/cursor$ vim hw.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+~                                                                              
+~                                                                              
+~                                                                              
+~                                                                              
+~                                                                              
+~                                                                              
+~                                                                              
+~                                                                              
+~                                                                              
+~                                                                              
+~                                                                              
+~                                                                              
+~                                                                              
+:wq
+ivn@ivn-u22:~/Projects/HW1/cursor$ head -7 hw.txt
+1
+2
+3
+4
+5
+6
+7
+ivn@ivn-u22:~/Projects/HW1/cursor$ echo Hello > test.sh
+ivn@ivn-u22:~/Projects/HW1/cursor$ chmod 764 test.sh
+ivn@ivn-u22:~/Projects/HW1/cursor$ ./test.sh
+./test.sh: line 1: Hello: command not found
+ivn@ivn-u22:~/Projects/HW1/cursor$ find *.sh
+hw1.sh
+hw2.sh
+hw.sh
+test.sh
